@@ -25,27 +25,11 @@ const questions = [
             {
                 name: `Send me an ${chalk.green.bold("email")}?`,
                 value: () => {
-                    open("mailto:hi@anmolsingh.me");
+                    open("mailto:vaibhavpravinnimkar@gmail.com");
                     console.log("\nDone, see you soon at inbox.\n");
                 }
             },
-            {
-                name: `Download my ${chalk.magentaBright.bold("Resume")}?`,
-                value: () => {
-                    // cliSpinners.dots;
-                    const loader = ora({
-                        text: ' Downloading Resume',
-                        spinner: cliSpinners.material,
-                    }).start();
-                    let pipe = request('https://anmolsingh.me/api/resume').pipe(fs.createWriteStream('./anmol-resume.html'));
-                    pipe.on("finish", function () {
-                        let downloadPath = path.join(process.cwd(), 'anmol-resume.html')
-                        console.log(`\nResume Downloaded at ${downloadPath} \n`);
-                        open(downloadPath)
-                        loader.stop();
-                    });
-                }
-            },
+            
             {
                 name: `Schedule a ${chalk.redBright.bold("Meeting")}?`,
                 value: () => {
@@ -64,15 +48,14 @@ const questions = [
 ];
 
 const data = {
-    name: chalk.bold.green("             Anmol Pratap Singh"),
-    handle: chalk.white("@anmol098"),
-    work: `${chalk.white("Lead Software Engineer at")} ${chalk
+    name: chalk.bold.green("Vaibhav Pravin Nimkar"),
+    handle: chalk.white("@vaibhavpnimkar"),
+    work: `${chalk.white("MERN STACK DEVELOPER")} ${chalk
         .hex("#2b82b2")
-        .bold("FootLoose Labs")}`,
-    twitter: chalk.gray("https://twitter.com/") + chalk.cyan("misteranmol"),
-    github: chalk.gray("https://github.com/") + chalk.green("anmol098"),
-    linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("anmol098"),
-    web: chalk.cyan("https://anmolsingh.me"),
+       }`,
+   
+    github: chalk.gray("https://github.com/") + chalk.green("vaibhavpnimkar"),
+    linkedin: chalk.gray("https://linkedin.com/in/") + chalk.blue("vaibhav-nimkar-a96754210"),
     npx: chalk.red("npx") + " " + chalk.white("anmol"),
 
     labelWork: chalk.white.bold("       Work:"),

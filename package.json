@@ -1,7 +1,7 @@
 {
-  "name": "anmol",
+  "name": "Vaibhav",
   "version": "4.0.0",
-  "description": "A personal card for Anmol Pratap Singh (@anmol098)",
+  "description": "A personal card for Vaibhav Nimkar (@anmol098)",
   "main": "card.js",
   "bin": {
     "anmol": "./card.js"
@@ -32,6 +32,6 @@
     "npx card",
     "business card"
   ],
-  "author": "Anmol Singh <hi@anmolsingh.me> (https://anmolsingh.me/)",
+  "author": "Vaibhav  Nimkar",
   "license": "ISC"
 }
