@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/anmol098/npx_card.git"
+    "url": "git+ https://github.com/vaibhavpnimkar/npx-vaibhav.git"
   },
   "scripts": {
     "test": "node card.js",
